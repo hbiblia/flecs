@@ -1218,7 +1218,7 @@ ecs_query_order_by(world, q, ecs_entity(Position), compare_position);
 This will sort the query by the `Position` component. The function also accepts a compare function, which looks like this:
 
 ```c
-int compare_position(ecs_entity_t e1, Posiiton *p1, ecs_entity_t e2, Position *p2) {
+int compare_position(ecs_entity_t e1, Position *p1, ecs_entity_t e2, Position *p2) {
     return p1->x - p2->x;
 }
 ```
